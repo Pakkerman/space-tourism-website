@@ -24,14 +24,15 @@ const Hamburger = () => {
 
 export const Navbar = () => {
   return (
-    <nav className="flex h-20 w-[100vw] items-center justify-between lg:h-36 ">
+    <nav className="relative flex h-20 w-[100vw] items-center justify-between lg:h-36 lg:pl-8">
+      <div className="absolute left-32 z-20 hidden h-[1px] w-[35vw] bg-slate-200/20 lg:block" />
       <div className="p-6">
         <Logo />
       </div>
-      <div className="p-6 md:hidden">
+      <div className="p-6 sm:hidden">
         <Hamburger />
       </div>
-      <div className="hidden h-20 items-center space-x-8 bg-slate-600/20 px-12 text-slate-200 backdrop-blur-lg md:flex lg:w-[55%]">
+      <div className="hidden h-20 items-center space-x-8 bg-slate-600/20 px-12 text-slate-200 backdrop-blur-lg sm:flex lg:w-[60%] lg:pl-44">
         <div className="font-Barlow font-light">
           <span className="hidden px-2 font-medium lg:inline">00</span>HOME
         </div>

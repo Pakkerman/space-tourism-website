@@ -16,14 +16,14 @@ export const BG = ({ pageNumber = 1 }: BGProps) => {
   return (
     <div className="fixed left-0 top-0 z-[-100] bg-black transition-all">
       <Image
-        className="h-screen w-screen object-cover object-center md:hidden"
+        className="h-screen w-screen object-cover object-center sm:hidden"
         src={`/assets/${pageName}/background-${pageName}-mobile.jpg`}
         width={375}
         height={710}
         alt="background image"
       />
       <Image
-        className="hidden h-screen w-screen object-cover  object-center md:block lg:hidden"
+        className="hidden h-screen w-screen object-cover  object-center sm:block lg:hidden"
         src={`/assets/${pageName}/background-${pageName}-tablet.jpg`}
         width={768}
         height={1024}
