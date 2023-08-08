@@ -12,7 +12,7 @@ export const Footer = () => {
       Coded by{" "}
       <a
         className="text-AlmostBlack hover:text-orange-500"
-        href=""
+        href="https://github.com/Pakkerman/space-tourism-website"
         target="_blank"
       >
         Pakkerman

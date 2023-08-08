@@ -1,9 +1,14 @@
-import { type Config } from "tailwindcss";
+import { type Config } from "tailwindcss"
 
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Barlow: "Barlow Condensed",
+        Bellefair: "Bellefair"
+      },
+    },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config

@@ -12,13 +12,20 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 ### Modifications
 
 ### Tasks
+- [ ] Navbar for all layout
 
 ### Styling
+- [x] Background on all layout and page
+
+
+### Notes
+- Background image handling 
+  - It's really tricky to use bg-[] for background image with tailwind, there are total 12 of images across all different layouts, the complete string of the classname must be appear somewhere in the code in order for tailwind to parse and added to the stylesheet, this defeats goal of dynamically generating different background depending on page and size in the first place, so opt to using Imaging instead.
 
 ### Links
 
-- [Github repo]()
-- [Deployed on Vercel]()
+- [Github repo](https://github.com/Pakkerman/space-tourism-website)
+- [Deployed on Vercel](https://space-tourism-website-orpin-omega.vercel.app/)
 
 ### Built with
 
