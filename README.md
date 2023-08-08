@@ -22,6 +22,13 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 - Background image handling 
   - It's really tricky to use bg-[] for background image with tailwind, there are total 12 of images across all different layouts, the complete string of the classname must be appear somewhere in the code in order for tailwind to parse and added to the stylesheet, this defeats goal of dynamically generating different background depending on page and size in the first place, so opt to using Imaging instead.
 
+- Pesky cursor-pointer and touch screen tap highlighting
+  - When a cursor-pointer applied, on touch devices, will have a short flash when tap, looks very cheap, and disiabling it using media query is just asking for trouble and still will not solve if on mobile device with a mouse. so I found these property that will help with do the trick:
+  - ```
+    -webkit-tap-highlight-color: transparent; /* For Safari, iOS */
+    tap-highlight-color: transparent; /* For some Android browsers */
+    ```
+
 ### Links
 
 - [Github repo](https://github.com/Pakkerman/space-tourism-website)

@@ -32,7 +32,7 @@ export default function Home() {
             </article>
           </div>
           <div className="lg:w-[50%]">
-            <div className=" mx-auto h-40 w-40 cursor-pointer rounded-full bg-slate-100 transition-all duration-100 hover:bg-black/30 hover:backdrop-blur-md lg:translate-x-[100%] lg:translate-y-[60%] lg:scale-150">
+            <div className=" mx-auto h-40 w-40 cursor-pointer select-none rounded-full bg-slate-100 transition-all duration-100 hover:bg-black/30 hover:backdrop-blur-md active:border-2 lg:translate-x-[100%] lg:translate-y-[60%] lg:scale-150">
               <h1 className="text-center font-Bellefair text-2xl leading-[10rem] text-slate-700 transition-all duration-100 hover:text-slate-200">
                 EXPLORE
               </h1>

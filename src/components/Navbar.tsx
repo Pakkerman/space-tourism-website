@@ -32,20 +32,29 @@ export const Navbar = () => {
       <div className="p-6 sm:hidden">
         <Hamburger />
       </div>
+
       <div className="hidden h-20 items-center space-x-8 bg-slate-600/20 px-12 text-slate-200 backdrop-blur-lg sm:flex lg:w-[60%] lg:pl-44">
-        <div className="font-Barlow font-light">
-          <span className="hidden px-2 font-medium lg:inline">00</span>HOME
+        <div className="h-full cursor-pointer px-1 font-Barlow font-light hover:border-b-2">
+          <h1 className="leading-[5rem] before:font-medium md:before:content-['00_']">
+            <span className="hidden pr-2 font-medium lg:inline">00</span>HOME
+          </h1>
         </div>
-        <div className="font-Barlow font-light">
-          <span className="hidden px-2 font-medium lg:inline">01</span>
-          DESTINATION
+        <div className="h-full cursor-pointer px-1 font-Barlow font-light hover:border-b-2">
+          <h1 className="leading-[5rem]">
+            <span className="hidden pr-2 font-medium lg:inline">01</span>
+            DESTINATION
+          </h1>
         </div>
-        <div className="font-Barlow font-light">
-          <span className="hidden px-2 font-medium lg:inline">02</span>CREW
+        <div className="h-full cursor-pointer px-1 font-Barlow font-light hover:border-b-2">
+          <h1 className="leading-[5rem]">
+            <span className="hidden pr-2 font-medium lg:inline">02</span>CREW
+          </h1>
         </div>
-        <div className="font-Barlow font-light">
-          <span className="hidden px-2 font-medium lg:inline">03</span>
-          TECHNOLOGY
+        <div className="h-full cursor-pointer px-1 font-Barlow font-light hover:border-b-2">
+          <h1 className="leading-[5rem]">
+            <span className="hidden pr-2 font-medium lg:inline">03</span>
+            TECHNOLOGY
+          </h1>
         </div>
       </div>
     </nav>
