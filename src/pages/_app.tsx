@@ -1,6 +1,7 @@
 import { type AppType } from "next/dist/shared/lib/utils"
 import Head from "next/head"
 import { BG } from "~/components/BG"
+import FontProvider from "~/components/FontProvider"
 import { Navbar } from "~/components/Navbar"
 import "~/styles/globals.css"
 
@@ -15,8 +16,10 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <Navbar />
-      <Component {...pageProps} />
+      <FontProvider>
+        <Navbar />
+        <Component {...pageProps} />
+      </FontProvider>
       <BG />
     </>
   )

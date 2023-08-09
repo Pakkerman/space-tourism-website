@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { BG } from "~/components/BG"
 import { Footer } from "~/components/Footer"
 
 export default function home() {
