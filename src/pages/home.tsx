@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { Footer } from "~/components/Footer"
 
 export default function home() {
   return (
@@ -31,9 +30,6 @@ export default function home() {
           </div>
         </div>
       </main>
-      <footer>
-        <Footer />
-      </footer>
     </>
   )
 }

@@ -10,7 +10,7 @@ body{
   tap-highlight-color: transparent; 
 }
 
-.cliklicious {
+.cliklicious {
   @apply cursor-pointer select-none;
 
   -webkit-tap-highlight-color: transparent;

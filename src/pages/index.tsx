@@ -7,5 +7,5 @@ export default function Home() {
   useEffect(() => {
     // Redirect to the home page
     void router.replace("/home")
-  })
+  }, [])
 }

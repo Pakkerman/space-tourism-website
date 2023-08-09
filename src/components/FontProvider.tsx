@@ -21,8 +21,6 @@ export default function FontProvider({
 }: {
   children: React.ReactNode
 }) {
-  console.log(typeof children)
-  console.log(children)
   return (
     <div
       className={`

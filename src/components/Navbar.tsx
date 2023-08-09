@@ -55,7 +55,7 @@ const MobileMenu = ({ pathname }: { pathname: string }) => {
       <div
         className={`
       ${show ? "translate-x-0" : "translate-x-[100%]"}
-      fixed right-0 top-0 h-[100dvh] w-[60%] bg-black/60 backdrop-blur-md transition-all sm:hidden`}
+      fixed right-0 top-0 z-10 h-[100dvh] w-[60%] bg-black/60 backdrop-blur-md transition-all sm:hidden`}
       >
         <div
           className="flex h-24 justify-end p-8"

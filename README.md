@@ -10,6 +10,7 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 - [ ] Toggle between the tabs to see new information
 
 ### Modifications
+- [ ]
 
 ### Tasks
 - [x] Navbar for all layout
@@ -22,6 +23,10 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 ### Styling
 - [x] Background on all layouts and all pages
 - [x] Navbar on all layouts
+
+### Optimizations
+- [x] Preloading Fonts
+- [ ] Preloading Images
 
 
 ### Notes
