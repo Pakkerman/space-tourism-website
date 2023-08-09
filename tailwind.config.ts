@@ -5,8 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        Barlow: "Barlow Condensed",
-        Bellefair: "Bellefair"
+        BarlowCondensed: "Barlow Condensed",
+        Barlow: "Barlow",
+        Bellefair: "Bellefair",
       },
     },
   },

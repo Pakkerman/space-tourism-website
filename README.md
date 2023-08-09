@@ -12,10 +12,16 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 ### Modifications
 
 ### Tasks
-- [ ] Navbar for all layout
+- [x] Navbar for all layout
+- [x] Mobile menu 
+- [x] Home Page content
+- [ ] Destination Page content
+- [ ] Crew Page content
+- [ ] Technology Page content
 
 ### Styling
-- [x] Background on all layout and page
+- [x] Background on all layouts and all pages
+- [x] Navbar on all layouts
 
 
 ### Notes
