@@ -10,7 +10,7 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 - [ ] Toggle between the tabs to see new information
 
 ### Modifications
-- [ ]
+- [x] Small Animations
 
 ### Tasks
 - [x] Navbar for all layout
@@ -20,7 +20,9 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
   - [x] Optimal on all layout
   - [x] Destination selection 
   - [x] Added spinning animation
-- [ ] Crew Page content
+- [x] Crew Page content
+  - [x] Optimal on all layout
+  - [x] Crew selection 
 - [ ] Technology Page content
 
 ### Styling
@@ -29,7 +31,8 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 
 ### Optimizations
 - [x] Preloading Fonts
-- [ ] Preloading Images
+- [x] Preloading Image
+- [x] Minimal layout change when selection destination and meeting crew
 
 
 ### Notes

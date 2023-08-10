@@ -52,7 +52,7 @@ const MobileMenu = ({ pathname }: { pathname: string }) => {
       <div
         className={`
       ${show ? "translate-x-0" : "translate-x-[100%]"}
-      fixed right-0 top-0 z-10 h-[100dvh] w-[60%] bg-black/60 backdrop-blur-md transition-all sm:hidden`}
+      fixed right-0 top-0 z-10 h-[100dvh] w-[60%] bg-black/60 backdrop-blur-md transition-all duration-300 sm:hidden`}
       >
         <div
           className="flex h-24 justify-end p-8"
@@ -60,17 +60,17 @@ const MobileMenu = ({ pathname }: { pathname: string }) => {
         >
           <CloseIcon />
         </div>
-        <div
-          className="flex flex-col space-y-8 px-12 pt-20"
-          onClick={() => setShow(false)}
-        >
+
+        <div className="flex flex-col space-y-8 px-12 pt-20">
           {MENUITEMS.map((item, idx) => (
-            <MenuItem
-              label={item}
-              idx={idx}
-              key={idx}
-              selected={pathname === "/" + item}
-            />
+            <div key={idx} onClick={() => setShow(false)}>
+              <MenuItem
+                label={item}
+                idx={idx}
+                key={idx}
+                selected={pathname === "/" + item}
+              />
+            </div>
           ))}
         </div>
       </div>
