@@ -40,7 +40,9 @@ export default function Destination() {
                 </div>
               ))}
             </div>
-            <h1 className="my-4 font-Bellefair text-7xl">MOON</h1>
+            <h1 className="my-4 font-Bellefair text-7xl">
+              {destinations[selected]?.name.toUpperCase()}
+            </h1>
             <div className="mb-4 flex min-h-[150px] flex-col justify-center">
               <p className="text-center font-Barlow font-light tracking-wide sm:mx-4 lg:mx-0 lg:max-w-[400px] lg:text-left">
                 {destinations[selected]?.description}
