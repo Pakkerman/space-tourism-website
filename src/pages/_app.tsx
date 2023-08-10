@@ -23,8 +23,8 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         </header>
         <Component {...pageProps} />
         <Footer />
-        <BG />
       </FontProvider>
+      <BG />
     </>
   )
 }

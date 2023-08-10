@@ -28,8 +28,6 @@ const imgs = [
   },
 ]
 
-console.log(imgs)
-
 type SelectedProps = {
   selected: number
   setSelected: Dispatch<SetStateAction<number>>
@@ -93,7 +91,7 @@ export default function Destination() {
                 </h2>
               </div>
               <div className="my-4 flex h-[160px] items-center">
-                <p className="text-center font-Barlow font-light tracking-wide sm:mx-4 sm:max-w-[400px] lg:mx-0 lg:text-left ">
+                <p className="px-6 text-center font-BarlowCondensed font-light tracking-wide sm:mx-4 sm:max-w-[400px] sm:px-0 lg:mx-0 lg:text-left ">
                   {tech[selected]?.description}
                 </p>
               </div>

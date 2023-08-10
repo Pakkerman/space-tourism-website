@@ -12,7 +12,7 @@ type SelectionProps = {
 
 const Selection = ({ selected, setSelected }: SelectionProps) => {
   return (
-    <div className="my-4 flex cursor-pointer items-center justify-center space-x-12 font-Barlow text-xl font-light lg:text-2xl">
+    <div className=" my-4 flex cursor-pointer items-center justify-center space-x-6 font-Barlow text-xl font-light lg:justify-start lg:space-x-12 lg:text-2xl">
       {crew.map((_, idx) => (
         <button
           key={idx}
@@ -48,19 +48,19 @@ export default function Crew() {
       <main className=" mx-auto max-w-[375px] sm:max-w-[550px] lg:max-w-none">
         <PageHeading text={" MEET YOUR CREW"} headingNumber={2} />
         <section className=" flex min-h-min flex-col items-center justify-between px-[7vw] sm:pt-10 lg:mx-auto lg:h-[550px] lg:w-[90vw] lg:flex-row">
-          <div className=" flex h-full flex-col lg:w-[45%]">
+          <div className="flex h-full flex-col lg:w-[45%]">
             <div className="flex h-full flex-col justify-evenly">
               <div className=" text-center font-Bellefair lg:text-left">
-                <h2 className="my-4 text-2xl text-slate-500">
+                <h2 className="my-4 text-xl text-slate-500">
                   {crew[selected]?.role.toUpperCase()}
                 </h2>
-                <h2 className="truncate text-4xl">
+                <h2 className="truncate text-3xl">
                   {crew[selected]?.name.toUpperCase()}
                 </h2>
               </div>
             </div>
-            <div className="my-4 flex min-h-[175px] items-center justify-center lg:justify-start">
-              <p className="text-center font-Barlow font-light tracking-wide sm:mx-4 lg:mx-0 lg:max-w-[400px] lg:text-left">
+            <div className="my-4 flex min-h-[175px]  items-center justify-center lg:justify-start">
+              <p className="text-center font-BarlowCondensed font-light tracking-wide sm:mx-4 lg:mx-0 lg:max-w-[400px] lg:text-left lg:text-lg">
                 {crew[selected]?.bio}
               </p>
             </div>

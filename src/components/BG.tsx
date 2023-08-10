@@ -33,6 +33,8 @@ export const BG = () => {
   let { pathname } = useRouter()
   pathname = pathname.slice(1)
 
+  if (pathname === "") return <div></div>
+
   return (
     <div className="fixed left-0 top-0 z-[-100] bg-black transition-all">
       <Image
