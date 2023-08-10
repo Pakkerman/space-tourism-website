@@ -16,7 +16,10 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 - [x] Navbar for all layout
 - [x] Mobile menu 
 - [x] Home Page content
-- [ ] Destination Page content
+- [x] Destination Page content
+  - [x] Optimal on all layout
+  - [x] Destination selection 
+  - [x] Added spinning animation
 - [ ] Crew Page content
 - [ ] Technology Page content
 

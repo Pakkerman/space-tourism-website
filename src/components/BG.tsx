@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { useRouter } from "next/router"
 
-import homeMobile from "../../public/assets/home/background-home-mobile.jpg"
-import homeTablet from "../../public/assets/home/background-home-tablet.jpg"
-import homeDesktop from "../../public/assets/home/background-home-desktop.jpg"
+// import homeMobile from "../../public/assets/home/background-home-mobile.jpg"
+// import homeTablet from "../../public/assets/home/background-home-tablet.jpg"
+// import homeDesktop from "../../public/assets/home/background-home-desktop.jpg"
 
 export const BG = () => {
   let { pathname } = useRouter()

@@ -18,7 +18,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <link rel="icon" href="/assets/favicon.png" />
       </Head>
       <FontProvider>
-        <Navbar />
+        <header>
+          <Navbar />
+        </header>
         <Component {...pageProps} />
         <Footer />
         <BG />

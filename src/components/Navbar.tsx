@@ -13,7 +13,7 @@ type MenuItemProps = {
 }
 
 const MenuItem = ({ label, idx, selected }: MenuItemProps) => {
-  const url = label === "home" ? "/" : label
+  const url = label
   return (
     <div
       className={`cursor-pointer border-b-2 px-1  font-BarlowCondensed font-light ${
@@ -38,9 +38,6 @@ const MobileMenu = ({ pathname }: { pathname: string }) => {
 
   return (
     <>
-      <div className="p-6">
-        <Logo />
-      </div>
       <div className="p-6 sm:hidden" onClick={() => setShow(true)}>
         <Hamburger />
       </div>
@@ -85,8 +82,9 @@ export const Navbar = () => {
   const { pathname } = useRouter()
 
   return (
-    <nav className="relative flex h-24 w-[100vw] items-center justify-between sm:h-20 lg:h-36 lg:pl-8">
+    <nav className="relative flex h-24 w-[100vw] items-center justify-between  pl-6 lg:h-36 lg:pl-8">
       <div className="absolute left-32 z-20 hidden h-[1px] w-[35vw] bg-slate-200/20 lg:block" />
+      <Logo />
       <MobileMenu pathname={pathname} />
 
       <div className="hidden h-20 items-center space-x-8 bg-slate-600/20 px-12 text-slate-200 backdrop-blur-md sm:flex lg:w-[60%] lg:space-x-12 lg:pl-44">

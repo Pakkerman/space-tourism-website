@@ -4,8 +4,8 @@ export default function home() {
   return (
     <>
       <main className="mx-auto max-w-[375px] sm:max-w-[550px] lg:max-w-none">
-        <div className=" flex h-[650px] flex-col items-center justify-between px-[7vw] sm:pt-10 lg:mx-auto lg:h-[600px] lg:w-[90vw] lg:flex-row">
-          <div className="flex h-full flex-col items-center justify-evenly lg:h-[80%] lg:w-[50%] lg:items-start lg:pr-20">
+        <div className="flex h-[700px] flex-col items-center justify-between px-[7vw] sm:pt-10 lg:mx-auto lg:h-[550px] lg:w-[90vw] lg:flex-row">
+          <section className="flex h-full flex-col items-center justify-evenly lg:h-[80%] lg:w-[50%] lg:items-start lg:pr-20">
             <h1 className="font-BarlowCondensed text-xl font-light tracking-widest text-slate-400 lg:text-2xl">
               SO, YOU WANT TO TRAVEL TO
             </h1>
@@ -18,7 +18,7 @@ export default function home() {
               it. Well sit back, and relax because we’ll give you a truly out of
               this world experience!
             </article>
-          </div>
+          </section>
           <div className="lg:w-[50%]">
             <Link href="/destination">
               <div className=" mx-auto h-40 w-40 cursor-pointer select-none rounded-full bg-slate-100 transition-all duration-100 hover:bg-black/30 hover:backdrop-blur-md active:border-2 lg:translate-x-[100%] lg:translate-y-[60%] lg:scale-150">

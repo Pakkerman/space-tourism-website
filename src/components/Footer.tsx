@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="text-MediumGray w-full pb-2 pt-6 text-center text-xs">
+    <footer className="my-4 w-full  text-center text-xs text-slate-300">
       Challenge by{" "}
       <a
         className="text-AlmostBlack hover:text-orange-500"
@@ -17,6 +17,6 @@ export const Footer = () => {
       >
         Pakkerman
       </a>
-    </div>
+    </footer>
   )
 }

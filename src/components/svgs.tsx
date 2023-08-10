@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export const Logo = () => {
   return (
-    <Link href="/">
+    <Link href="/home">
       <svg
         className="cursor-pointer transition-all hover:scale-110 active:scale-110"
         xmlns="http://www.w3.org/2000/svg"
