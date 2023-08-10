@@ -11,6 +11,7 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 
 ### Modifications
 - [x] Small Animations
+- [x] Added link to next section in the selection section
 
 ### Tasks
 - [x] Navbar for all layout
@@ -23,7 +24,9 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 - [x] Crew Page content
   - [x] Optimal on all layout
   - [x] Crew selection 
-- [ ] Technology Page content
+- [x] Technology Page content
+  - [x] Optimal on all layout
+  - [x] Tech selection 
 
 ### Styling
 - [x] Background on all layouts and all pages

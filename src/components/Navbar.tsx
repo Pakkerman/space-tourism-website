@@ -22,9 +22,7 @@ const MenuItem = ({ label, idx, selected }: MenuItemProps) => {
     >
       <Link href={url}>
         <h1 className="text-md leading-[2rem] transition-all hover:scale-110 active:scale-110 sm:leading-[5rem] lg:text-lg lg:leading-[5rem]">
-          <span className="pr-2 font-medium  sm:hidden lg:inline">{`0${
-            idx + 1
-          }`}</span>
+          <span className="pr-2 font-medium  sm:hidden lg:inline">{`0${idx}`}</span>
           {label.toUpperCase()}
         </h1>
       </Link>
