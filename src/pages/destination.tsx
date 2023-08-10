@@ -1,10 +1,45 @@
-import { useState } from "react"
+import { type Dispatch, type SetStateAction, useState } from "react"
 import Image from "next/image"
 import data from "../data.json"
 import { PageHeading } from "~/components/PageHeading"
 import Link from "next/link"
 
 const { destinations } = data
+
+type SelectionProps = {
+  selected: number
+  setSelected: Dispatch<SetStateAction<number>>
+}
+
+const Selection = ({ selected, setSelected }: SelectionProps) => {
+  return (
+    <div className=" my-4 flex cursor-pointer items-center space-x-12 font-BarlowCondensed text-xl font-light lg:text-2xl">
+      {destinations.map((item, idx) => (
+        <div
+          key={idx}
+          className={`
+    ${selected === idx ? "border-opacity-100 text-slate-100" : ""}
+    border-b-2 border-slate-400 border-opacity-0 py-2 text-slate-400 transition-all hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100`}
+          onClick={() => setSelected(idx)}
+        >
+          {item.name.toUpperCase()}
+        </div>
+      ))}
+      <NextButton />
+    </div>
+  )
+}
+
+const NextButton = () => {
+  return (
+    <Link
+      href="/crew"
+      className="border-b-2 border-slate-400 border-opacity-0 py-2 text-slate-400 transition-all hover:scale-110 hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100"
+    >
+      {">>"}
+    </Link>
+  )
+}
 
 export default function Destination() {
   const [selected, setSelected] = useState<number>(0)
@@ -27,25 +62,7 @@ export default function Destination() {
             </div>
           </div>
           <div className=" flex h-full flex-col items-center justify-center lg:w-[45%] lg:items-start">
-            <div className=" my-4 flex cursor-pointer items-center space-x-12 font-BarlowCondensed text-xl font-light lg:text-2xl">
-              {destinations.map((item, idx) => (
-                <div
-                  key={idx}
-                  className={`
-                ${selected === idx ? "border-opacity-100 text-slate-100" : ""}
-                border-b-2 border-slate-400 border-opacity-0 py-2 text-slate-400 transition-all hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100`}
-                  onClick={() => setSelected(idx)}
-                >
-                  {item.name.toUpperCase()}
-                </div>
-              ))}
-              <Link
-                href="/crew"
-                className="border-b-2 border-slate-400 border-opacity-0 py-2 text-slate-400 transition-all hover:scale-110 hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100"
-              >
-                {">>"}
-              </Link>
-            </div>
+            <Selection selected={selected} setSelected={setSelected} />
             <h1 className="my-4 font-Bellefair text-7xl">
               {destinations[selected]?.name.toUpperCase()}
             </h1>

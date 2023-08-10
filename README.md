@@ -5,9 +5,9 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 
 ### Solution Requirements
 
-- [ ] Optimal layout for each of the website's pages depending on their device's screen size
-- [ ] Hover states for all interactive elements on the page
-- [ ] Toggle between the tabs to see new information
+- [x] Optimal layout for each of the website's pages depending on their device's screen size
+- [x] Hover states for all interactive elements on the page
+- [x] Toggle between the tabs to see new information
 
 ### Modifications
 - [x] Small Animations

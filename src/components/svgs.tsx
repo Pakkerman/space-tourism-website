@@ -4,7 +4,7 @@ export const Logo = () => {
   return (
     <Link href="/home">
       <svg
-        className="cursor-pointer transition-all hover:scale-110 active:scale-110"
+        className="cursor-pointer text-slate-400 transition-all hover:scale-110 active:scale-110"
         xmlns="http://www.w3.org/2000/svg"
         width="48"
         height="48"
