@@ -43,11 +43,11 @@ const Selection = ({ selected, setSelected }: SelectedProps) => {
           <button
             key={idx}
             className={`
-                    ${
-                      selected === idx
-                        ? "border-slate-200 bg-slate-200 text-slate-800"
-                        : "border-slate-500"
-                    }
+            ${
+              selected === idx
+                ? "border-slate-200 bg-slate-200 text-slate-800"
+                : "border-slate-500"
+            }
                     h-14 w-14 rounded-full border-[1px]  text-center font-Barlow font-bold transition-all hover:border-slate-100 hover:bg-slate-100 hover:text-slate-800 active:scale-110
                     `}
             onClick={() => setSelected(idx)}
@@ -68,17 +68,15 @@ export default function Destination() {
       <main className=" mx-auto max-w-[375px] sm:max-w-[550px] lg:max-w-none">
         <PageHeading text={"SPACE LAUNCH 101"} headingNumber={3} />
         <section className="  flex min-h-min flex-col items-center justify-between sm:pt-10 lg:mx-auto lg:h-[550px] lg:w-[100vw] lg:flex-row-reverse lg:pl-[7vw]">
-          <div className="  my-4 flex h-[250px] w-screen flex-col items-center  justify-center sm:h-[400px] lg:h-full lg:w-[40%]">
+          <div className="my-4 flex h-[250px] w-screen flex-col items-center  justify-center sm:h-[400px] lg:h-full lg:w-[40%]">
             <Image
               className="h-[250px] object-cover  object-center sm:hidden"
               src={imgs[selected]?.landscape ?? ""}
-              quality={100}
               alt={"crew image"}
             />
             <Image
               className="hidden h-full object-cover object-left sm:block sm:max-w-[550px] sm:rounded-lg "
               src={imgs[selected]?.portrait ?? ""}
-              quality={100}
               alt={"crew image"}
             />
           </div>

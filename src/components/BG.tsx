@@ -20,7 +20,7 @@ const img: Record<string, StaticImageData> = {
   homeDesktop: homeDesktop,
   destinationMobile: destinationMobile,
   destinationTablet: destinationTablet,
-  destinationDeskto: destinationDesktop,
+  destinationDesktop: destinationDesktop,
   crewMobile: crewMobile,
   crewTablet: crewTablet,
   crewDesktop: crewDesktop,
@@ -38,19 +38,19 @@ export const BG = () => {
       <Image
         className="h-screen w-screen object-cover object-center sm:hidden"
         src={img[`${pathname}Mobile`]!}
-        quality={100}
+        placeholder="blur"
         alt="background image"
       />
       <Image
         className="hidden h-screen w-screen object-cover sm:block lg:hidden"
         src={img[`${pathname}Tablet`]!}
-        quality={100}
+        placeholder="blur"
         alt="background image"
       />
       <Image
         className="hidden h-screen w-screen object-cover object-center lg:block"
         src={img[`${pathname}Desktop`]!}
-        quality={100}
+        placeholder="blur"
         alt="background image"
       />
     </div>

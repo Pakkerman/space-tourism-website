@@ -56,7 +56,6 @@ export default function Destination() {
                 src={destinations[selected]?.images.png ?? ""}
                 width={445}
                 height={445}
-                quality={100}
                 alt={"destination image"}
               />
             </div>
