@@ -18,8 +18,8 @@ const Selection = ({ selected, setSelected }: SelectionProps) => {
         <div
           key={idx}
           className={`
-    ${selected === idx ? "border-opacity-100 text-slate-100" : ""}
-    border-b-2 border-slate-400 border-opacity-0 py-2 text-slate-400 transition-all hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100`}
+    ${selected === idx ? "border-opacity-100 text-slate-100" : "text-slate-400"}
+    border-b-2 border-slate-400 border-opacity-0 py-2  transition-all hover:border-slate-200 hover:border-opacity-100 hover:text-slate-100`}
           onClick={() => setSelected(idx)}
         >
           {item.name.toUpperCase()}

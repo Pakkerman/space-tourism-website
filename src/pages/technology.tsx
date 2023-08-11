@@ -43,10 +43,10 @@ const Selection = ({ selected, setSelected }: SelectedProps) => {
             className={`
             ${
               selected === idx
-                ? "border-slate-200 bg-slate-200 text-slate-800"
+                ? "border-slate-200 bg-slate-200 text-orange-500"
                 : "border-slate-500"
             }
-                    h-14 w-14 rounded-full border-[1px]  text-center font-Barlow font-bold transition-all hover:border-slate-100 hover:bg-slate-100 hover:text-slate-800 active:scale-110
+                    h-14 w-14 rounded-full border-[1px]  text-center font-Barlow font-bold transition-all hover:border-slate-100 hover:bg-slate-100 hover:text-orange-500  active:scale-110
                     `}
             onClick={() => setSelected(idx)}
           >
