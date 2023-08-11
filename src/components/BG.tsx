@@ -36,7 +36,7 @@ export const BG = () => {
   if (pathname === "") return <div></div>
 
   return (
-    <div className="fixed left-0 top-0 z-[-100] bg-black transition-all">
+    <div className="fixed left-0 top-0 z-[-100] bg-slate-800 ">
       <Image
         className="h-screen w-screen object-cover object-center sm:hidden"
         src={img[`${pathname}Mobile`]!}
