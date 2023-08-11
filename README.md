@@ -3,6 +3,28 @@
 This is a solution to the [Space tourism multi-page website](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3).
 
 
+
+### Screenshots
+
+<div align='center'>
+    <h2>Mobile Screenshot</h2>
+    <img src="./screenshots/screenshotMobile.jpg" alt="Mobile Screenshot" height='400'>
+</div>
+
+<div align='center'>
+    <h2>Tablet Screenshot</h2>
+    <img src="./screenshots/screenshotTablet.jpg" alt="Mobile Screenshot" height='400'>
+</div>
+
+<div align='center'>
+    <h2>Desktop Screenshot</h2>
+    <img src="./screenshots/screenshotDesktop.jpg" alt="Desktop Screenshot" maxHeight='500'>
+</div>
+
+
+
+
+
 ### Solution Requirements
 
 - [x] Optimal layout for each of the website's pages depending on their device's screen size
