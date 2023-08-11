@@ -34,8 +34,8 @@ This is a solution to the [Space tourism multi-page website](https://www.fronten
 
 ### Optimizations
 - [x] Preloading Fonts
-- [ ] Image Loading
-  - [ ] Background image loading
+- [x] Image Loading
+  - [x] Background image loading
 - [x] Minimal layout change when selection destination and meeting crew
 
 

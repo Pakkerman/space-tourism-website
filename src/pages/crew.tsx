@@ -72,6 +72,8 @@ export default function Crew() {
               src={crew[selected]?.images.png ?? ""}
               width={445}
               height={445}
+              sizes="100vw"
+              priority={true}
               alt={"crew image"}
             />
 

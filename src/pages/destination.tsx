@@ -56,6 +56,8 @@ export default function Destination() {
                 src={destinations[selected]?.images.png ?? ""}
                 width={445}
                 height={445}
+                sizes="100vw"
+                priority={true}
                 alt={"destination image"}
               />
             </div>

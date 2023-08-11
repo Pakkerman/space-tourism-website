@@ -70,11 +70,15 @@ export default function Destination() {
             <Image
               className="h-[250px] object-cover  object-center sm:hidden"
               src={imgs[selected]?.landscape ?? ""}
+              priority={true}
+              sizes="100vw"
               alt={"crew image"}
             />
             <Image
               className="hidden h-full object-cover object-left sm:block sm:max-w-[550px] sm:rounded-lg "
               src={imgs[selected]?.portrait ?? ""}
+              sizes="100vw"
+              priority={true}
               alt={"crew image"}
             />
           </div>
